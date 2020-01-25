@@ -20,6 +20,7 @@ namespace Week1_Exercises
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Band> AllBands = new List<Band>();
         public MainWindow()
         {
             InitializeComponent();
@@ -39,7 +40,27 @@ namespace Week1_Exercises
             IndieBand i1 = new IndieBand() { BandName = "Arctic Monkeys", YearFormed = 2002, BandMembers = "Alex Turner, Jamie Cook, Matt Helders, Nick O'Malley" };
             IndieBand i2 = new IndieBand() { BandName = "The Killers", YearFormed = 2001, BandMembers = "Brandon Flowers, Dave Keuning, Mark Stoermer, Ronnie Vannucci Jr." };
 
+            AllBands.Add(r1);
+            AllBands.Add(r2);
+            AllBands.Add(p1);
+            AllBands.Add(p2);
+            AllBands.Add(i1);
+            AllBands.Add(i2);
+
+            AllBands.Sort();
+
+            lbxBands.ItemsSource = AllBands;
             //GetBands();
+        }
+
+        private void LbxBands_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(lbxBands.SelectedItem != null)
+            {
+                Band selectedBand = lbxBands.SelectedItem as Band;
+
+                tblkBandInfo.Text = $"Formed: {selectedBand.YearFormed}\n" + $"Members: {selectedBand.BandMembers}";
+            }
         }
 
         /*private Band[] GetBands()
