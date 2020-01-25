@@ -27,12 +27,34 @@ namespace Week1_Exercises
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            GetBands();
+            // Create Rock Bands
+            RockBand r1 = new RockBand() { BandName = "Fleetwood Mac", YearFormed = 1967, BandMembers = "Mick Fleetwood, John McVie, Christine McVie, Stevie Nicks, Mick Campbell, Neil Finn" };
+            RockBand r2 = new RockBand() { BandName = "The Rolling Stones", YearFormed = 1962, BandMembers = "Mick Jagger, Keith Richards, Ronnie Wood, Charlie Watts" };
+
+            // Create Pop Bands
+            PopBand p1 = new PopBand() { BandName = "The Beatles", YearFormed = 1960, BandMembers = "John Lennon, Paul McCartney, George Harrison, Ringo Starr" };
+            PopBand p2 = new PopBand() { BandName = "Westlife", YearFormed = 1998, BandMembers = "Shane Filan, Markus Feehily, Kian Egan, Nicky Byrne" };
+
+            // Create Indie Bands
+            IndieBand i1 = new IndieBand() { BandName = "Arctic Monkeys", YearFormed = 2002, BandMembers = "Alex Turner, Jamie Cook, Matt Helders, Nick O'Malley" };
+            IndieBand i2 = new IndieBand() { BandName = "The Killers", YearFormed = 2001, BandMembers = "Brandon Flowers, Dave Keuning, Mark Stoermer, Ronnie Vannucci Jr." };
+
+            //GetBands();
         }
 
-        private Band[] GetBands()
+        /*private Band[] GetBands()
         {
-            
-        }
+            // Create Rock Bands
+            RockBand r1 = new RockBand() { BandName = "Fleetwood Mac", YearFormed = 1967, BandMembers = "Mick Fleetwood, John McVie, Christine McVie, Stevie Nicks, Mick Campbell, Neil Finn" };
+            RockBand r2 = new RockBand() { BandName = "The Rolling Stones", YearFormed = 1962, BandMembers = "Mick Jagger, Keith Richards, Ronnie Wood, Charlie Watts" };
+
+            // Create Pop Bands
+            PopBand p1 = new PopBand() { BandName = "The Beatles", YearFormed = 1960, BandMembers = "John Lennon, Paul McCartney, George Harrison, Ringo Starr" };
+            PopBand p2 = new PopBand() { BandName = "Westlife", YearFormed = 1998, BandMembers = "Shane Filan, Markus Feehily, Kian Egan, Nicky Byrne" };
+
+            // Create Indie Bands
+            IndieBand i1 = new IndieBand() { BandName = "Arctic Monkeys", YearFormed = 2002, BandMembers = "Alex Turner, Jamie Cook, Matt Helders, Nick O'Malley" };
+            IndieBand i2 = new IndieBand() { BandName = "The Killers", YearFormed = 2001, BandMembers = "Brandon Flowers, Dave Keuning, Mark Stoermer, Ronnie Vannucci Jr." };
+        }*/
     }
 }
