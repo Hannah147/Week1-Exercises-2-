@@ -40,7 +40,7 @@ namespace Week1_Exercises
 
         public RockBand()
         {
-            
+            Albums = new Album[10];
         }
     }
 
@@ -53,7 +53,7 @@ namespace Week1_Exercises
 
         public PopBand()
         {
-
+            Albums = new Album[10];
         }
     }
 
@@ -66,7 +66,7 @@ namespace Week1_Exercises
 
         public IndieBand()
         {
-
+            Albums = new Album[10];
         }
     }
 }
