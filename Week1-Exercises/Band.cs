@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Week1_Exercises
 {
-    class Band
+    public class Band
     {
+        public string BandName { get; set; }
+        public int YearFormed { get; set; }
+        public string BandMembers { get; set; }
+        
     }
 }
