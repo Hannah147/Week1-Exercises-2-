@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Week1_Exercises"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="lblBands" Content="Bands" HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label x:Name="lblBandInfo" Content="Band Information" HorizontalAlignment="Left" Margin="439,10,0,0" VerticalAlignment="Top" FontSize="30"/>

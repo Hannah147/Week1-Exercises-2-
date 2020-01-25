@@ -24,5 +24,15 @@ namespace Week1_Exercises
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            GetBands();
+        }
+
+        private Band[] GetBands()
+        {
+            
+        }
     }
 }
