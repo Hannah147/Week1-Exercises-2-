@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week1_Exercises
 {
-    public class Band : IComparable
+    public abstract class Band : IComparable
     {
         public string BandName { get; set; }
         public int YearFormed { get; set; }
@@ -26,6 +26,45 @@ namespace Week1_Exercises
                 return this.BandName.CompareTo(otherBand.BandName);
             else
                 throw new ArgumentException("Object is not a Band");
+        }
+    }
+
+    public class RockBand : Band
+    {
+        public override string ToString()
+        {
+            return (this.BandName + " - Rock");
+        }
+
+        public RockBand()
+        {
+            
+        }
+    }
+
+    public class PopBand : Band
+    {
+        public override string ToString()
+        {
+            return (this.BandName + " - Pop");
+        }
+
+        public PopBand()
+        {
+
+        }
+    }
+
+    public class IndieBand : Band
+    {
+        public override string ToString()
+        {
+            return (this.BandName + " - Indie");
+        }
+
+        public IndieBand()
+        {
+
         }
     }
 }
