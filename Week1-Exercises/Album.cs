@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Week1_Exercises
 {
-    class Album
+    public class Album
     {
         public string AlbumName { get; set; }
         public DateTime YearReleased { get; set; }

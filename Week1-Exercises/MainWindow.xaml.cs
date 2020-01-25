@@ -28,6 +28,10 @@ namespace Week1_Exercises
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            string[] genres = { "All", "Rock", "Pop", "Indie" };
+            cbxGenre.ItemsSource = genres;
+            cbxGenre.SelectedIndex = 0;
+
             // Create Rock Bands
             RockBand r1 = new RockBand() { BandName = "Fleetwood Mac", YearFormed = 1967, BandMembers = "Mick Fleetwood, John McVie, Christine McVie, Stevie Nicks, Mick Campbell, Neil Finn" };
             RockBand r2 = new RockBand() { BandName = "The Rolling Stones", YearFormed = 1962, BandMembers = "Mick Jagger, Keith Richards, Ronnie Wood, Charlie Watts" };
@@ -62,6 +66,37 @@ namespace Week1_Exercises
                 tblkBandInfo.Text = $"Formed: {selectedBand.YearFormed}\n" + $"Members: {selectedBand.BandMembers}";
             }
         }
+
+        private void CbxGenre_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(cbxGenre.SelectedItem != null)
+            {
+                string selectedGenre = cbxGenre.SelectedItem as string;
+                Band selectedBand = lbxBands.SelectedItem as Band;
+
+                Band[] filteredBands = new Band[2];
+                int counter = 0;
+
+                switch(selectedGenre)
+                {
+                    case "All":
+                        lbxBands.ItemsSource = AllBands;
+                        break;
+
+                    //case "Rock":
+                        
+                }
+            }
+        }
+
+        /*private DateTime GetRandomDate(Band band, Random randomFactory)
+        {
+            DateTime startDate = new DateTime(band.YearFormed, 01, 01);
+            DateTime endDate = new DateTime(2018, 09, 01);
+            TimeSpan timeSpan = endDate - startDate;
+            //TimeSpan newSpan = new TimeSpan(0, randomFactory.Next(0, 2019));
+            DateTime newDate = startDate + newSpan;
+        }*/
 
         /*private Band[] GetBands()
         {

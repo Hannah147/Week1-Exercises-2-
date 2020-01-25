@@ -12,6 +12,8 @@ namespace Week1_Exercises
         public int YearFormed { get; set; }
         public string BandMembers { get; set; }
 
+        public Album[] Albums { get; set; }
+
         public override string ToString()
         {
             return string.Format($"{BandName} - {this.GetType().Name}");

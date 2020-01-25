@@ -10,8 +10,8 @@
         <Label x:Name="lblBands" Content="Bands" HorizontalAlignment="Left" Margin="86,10,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label x:Name="lblBandInfo" Content="Band Information" HorizontalAlignment="Left" Margin="439,10,0,0" VerticalAlignment="Top" FontSize="30"/>
         <Label Content="Genre" HorizontalAlignment="Left" Margin="86,65,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbxGenre" HorizontalAlignment="Left" Margin="158,69,0,0" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="243" Margin="78,112,0,0" VerticalAlignment="Top" Width="192" SelectionChanged="LbxBands_SelectionChanged"/>
+        <ComboBox x:Name="cbxGenre" HorizontalAlignment="Left" Margin="158,69,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbxGenre_SelectionChanged"/>
+        <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="243" Margin="78,112,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="LbxBands_SelectionChanged"/>
         <ListBox x:Name="lbxAlbums" HorizontalAlignment="Left" Height="123" Margin="439,232,0,0" VerticalAlignment="Top" Width="241"/>
         <Label x:Name="lblAlbums" Content="Albums" HorizontalAlignment="Left" Margin="439,177,0,0" VerticalAlignment="Top" FontSize="30"/>
         <TextBlock x:Name="tblkBandInfo" HorizontalAlignment="Left" Margin="439,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="81" Width="241"/>
